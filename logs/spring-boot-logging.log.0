@@ -1,0 +1,4 @@
+[2019-04-10 11:12:23.544] - 29440 INFO [main] --- org.apache.catalina.core.StandardService: Starting service [Tomcat]
+[2019-04-10 11:12:23.548] - 29440 INFO [main] --- org.apache.catalina.core.StandardEngine: Starting Servlet engine: [Apache Tomcat/9.0.17]
+[2019-04-10 11:12:23.795] - 29440 INFO [main] --- org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]: Initializing Spring embedded WebApplicationContext
+[2019-04-10 11:12:26.958] - 29440 INFO [main] --- org.apache.catalina.core.StandardService: Stopping service [Tomcat]
