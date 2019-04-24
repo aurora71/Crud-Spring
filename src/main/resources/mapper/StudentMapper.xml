@@ -1,19 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.crao.crud.dao.StudentMapper">
-    <resultMap id="test" type="com.crao.crud.dto.Student">
-
+    <resultMap id="test" type="com.crao.crud.pojo.Student">
     </resultMap>
 
     <select id="getTest" resultType="string">
         select name from student where id = 10001
     </select>
-    <select id="getTestList" resultType="com.crao.crud.dto.Student">
+    <select id="getTestList" resultType="com.crao.crud.pojo.Student">
         select * from student where isDeleted = 0
     </select>
 
-    <select id="getStudent" resultType="com.crao.crud.dto.Student">
-        select name, major from student where id=#{id}
+    <select id="getStudent" resultType="com.crao.crud.pojo.Student">
+        select id, name, major from student where id=#{id}
+    </select>
+
+    <select id="getDelStudent" resultType="com.crao.crud.pojo.Student">
+        select * from student where isDeleted = 1
     </select>
 
     <insert id="addStudent">
